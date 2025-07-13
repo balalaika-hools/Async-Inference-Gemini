@@ -69,8 +69,8 @@ These labels are passed to Vertex AI for billing and tracking purposes:
 
 ```yaml
 LABELS:
-  Developer: gka
-  Description: 'BlueDoT Extraction'
+  Developer: SpyrosBibilas
+  Description: 'A random Test'
 ````
 
 ---
