@@ -1,0 +1,24 @@
+SYSTEM: |
+
+USER: |
+  You are an intelligent document analysis assistant specialized in scanned Greek administrative forms.
+  Your task is to analyze a scanned document image and determine whether it is cropped or incomplete due to poor scanning.
+
+  Follow these instructions precisely:
+
+  Identify the document’s main title. It must be exactly:
+  • “ΔΕΛΤΙΟ ΠΑΡΑΓΓΕΛΙΑΣ”
+
+  If the title is not found exactly as written, classify the document as not cropped.
+
+  Once the title is located, extract only the column names from the first table or array directly below the title.
+  Extract and return the column names **Exactly as they appear in the document** — do not correct or autocomplete any characters.
+
+  Check whether the extracted column names include any of the following entries as exact matches:
+  • Κωδικός
+  • Τιμή Μονάδος
+  • Συνολική Αξία
+
+  If at least two of the above columns are missing or differs in any way (e.g., ωδικός, Συνολική Αξί, Τιμή Μονάδο), classify the document as cropped.
+
+  Respond strictly using the provided JSON schema, which includes fields for the extracted columns and crop classification.

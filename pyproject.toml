@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools >= 77.0.3"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "gemini_async_inference"
+version = "0.2.0"
+description = "Generates Vertex Schema from Pydantic"
+readme = "README.md"
+requires-python = ">=3.11.13"
+
+
+dependencies = [
+    "PyYAML==6.0.2",
+    "google-genai==1.25.0",
+    "tqdm==4.66.5",
+    "pandas==2.2.2",
+    "tenacity>=8.2.3,<9.0.0",
+]
+
+
+[project.entry-points."console_scripts"]
+inference = "src.main:main"
+
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]

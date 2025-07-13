@@ -1,0 +1,58 @@
+[
+  {
+    "filepath": "00008.pdf",
+    "response": {
+      "text": "The document does not contain the exact main title \"ΔΕΛΤΙΟ ΠΑΡΑΓΓΕΛΙΑΣ\". Instead, it shows \"Τιμολόγιο Πώλησης\" as the document type. Therefore, based on the instructions, the document is classified as not cropped.",
+      "is_cropped": false
+    }
+  },
+  {
+    "filepath": "20196.pdf",
+    "response": {
+      "text": "The document's main title is \"ΠΡΩΤΟΚΟΛΛΟ ΠΑΡΑΛΑΒΗΣ\", which does not exactly match the required title \"ΔΕΛΤΙΟ ΠΑΡΑΓΓΕΛΙΑΣ\". According to the instructions, if the title is not found exactly as written, the document is classified as not cropped.",
+      "is_cropped": false
+    }
+  },
+  {
+    "filepath": "64251.pdf",
+    "response": {
+      "text": "The main title identified in the document is \"ΠΡΩΤΟΚΟΛΛΟ ΠΑΡΑΛΑΒΗΣ\". This does not exactly match the required title \"ΔΕΛΤΙΟ ΠΑΡΑΓΓΕΛΙΑΣ\". Therefore, based on the instructions, the document is classified as not cropped.",
+      "is_cropped": false
+    }
+  },
+  {
+    "filepath": "14089.pdf",
+    "response": {
+      "text": "The document's main title \"ΔΕΛΤΙΟ ΠΑΡΑΓΓΕΛΙΑΣ\" was found. The extracted column names are \"Α/Α\", \"Κωδικός\", \"Περιγραφή Είδους\", \"Κωδ. Ι/Π. ΕΟΦ\", \"M.M\", \"Ποσότητα\", \"Ποσότητα Συσκευασίας\", and \"Τιμή Μονάδος\". The columns \"Κωδικός\" and \"Τιμή Μονάδος\" are present and exact. \"Συνολική Αξία\" is not a column header. Since fewer than two of the specified columns are missing or differ, the document is not considered cropped.",
+      "is_cropped": false
+    }
+  },
+  {
+    "filepath": "06415.pdf",
+    "response": {
+      "text": "The main title \"ΔΕΛΤΙΟ ΠΑΡΑΓΓΕΛΙΑΣ\" was successfully identified. The extracted column names from the table are: \"Α/Α\", \"Κωδικός\", \"Περιγραφή Είδους\", \"Κωδ. Ι/Π. ΕΟΦ\", \"Μ.Μ\", \"Ποσότητα\", \"Ποσότητα Συσκευασίας\", \"Τιμή Μονάδος\". Of the required columns (\"Κωδικός\", \"Τιμή Μονάδος\", \"Συνολική Αξία\"), \"Κωδικός\" and \"Τιμή Μονάδος\" were found as column headers. \"Συνολική Αξία\" was present as a summary line below the table, but not as a column header. Since only one of the three specified columns was not found as a column header, the document is not considered cropped based on the given criteria.",
+      "is_cropped": false
+    }
+  },
+  {
+    "filepath": "22215.pdf",
+    "response": {
+      "text": "The document does not contain the exact main title \"ΔΕΛΤΙΟ ΠΑΡΑΓΓΕΛΙΑΣ\". Therefore, it is classified as not cropped based on the title criterion.",
+      "is_cropped": false
+    }
+  },
+  {
+    "filepath": "07617.pdf",
+    "response": {
+      "text": "The document title \"ΔΕΛΤΙΟ ΠΑΡΑΓΓΕΛΙΑΣ\" was successfully identified. The extracted column names from the table are: \"Α/Α\", \"Κωδικός\", \"Περιγραφή Είδους\", \"Κωδ. Ι/Π. ΕΟΦ\", \"M.M\", \"Ποσότητα\", \"Ποσότητα Συσκευασίας\", \"Τιμή Συνολική Αξία Μονάδος\". When checking against the required column names, \"Κωδικός\" was found exactly. However, \"Τιμή Μονάδος\" and \"Συνολική Αξία\" were not found as exact matches; the document contains \"Τιμή Συνολική Αξία Μονάδος\" instead. Since at least two of the specified columns (\"Τιμή Μονάδος\" and \"Συνολική Αξία\") are missing or differ, the document is classified as cropped.",
+      "is_cropped": true
+    }
+  },
+  {
+    "filepath": "08017.pdf",
+    "response": {
+      "text": "The document's main title \"ΔΕΛΤΙΟ ΠΑΡΑΓΓΕΛΙΑΣ\" was successfully identified. The extracted column names from the first table are: \"Α/Α\", \"Κωδικός\", \"Περιγραφή Είδους\", \"Κωδ. Ι/Π. Μ.Μ ΕΟΦ\", \"Ποσότητα\", \"Ποσότητα Συσκευασίας\", and \"Τιμή Μονάδος\". The columns \"Κωδικός\" and \"Τιμή Μονάδος\" are present and exact. The term \"Συνολική Αξία\" is present in the document but as a summary value, not a column header. Since fewer than two of the specified columns are missing or differ as column headers, the document is not considered cropped.",
+      "is_cropped": false
+    }
+  }
+]

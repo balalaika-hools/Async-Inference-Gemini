@@ -1,0 +1,21 @@
+{
+  "type": "OBJECT",
+  "properties": {
+    "text": {
+      "type": "STRING",
+      "description": "Free-text explanation including the extracted column names and any additional interpretation or justification."
+    },
+    "is_cropped": {
+      "type": "BOOLEAN",
+      "description": "Boolean flag indicating whether the document appears to be cropped or incomplete based on missing or malformed column names."
+    }
+  },
+  "required": [
+    "text",
+    "is_cropped"
+  ],
+  "propertyOrdering": [
+    "text",
+    "is_cropped"
+  ]
+}

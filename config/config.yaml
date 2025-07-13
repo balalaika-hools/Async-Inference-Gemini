@@ -1,0 +1,32 @@
+##----------------- GENERAL-PARAMETERS -----------------##
+PDF_FOLDER_PATH: 'C:\Users\gka\Giorgos\Projects\Gemini\PdF_Prompting\misc\pdf_files' 
+PROJECT_ID: acaillms-proj-euc2-rnd
+MODEL: gemini-2.5-flash
+LOCATION: us-central1
+SAMPLE: null         
+
+
+
+##------------- REQUEST-PARAMETERS -------------- ##
+CONC_TASKS: 5
+MAX_FAILED: 10
+MAX_RETRIES: 3
+
+
+##------------- COST-TRACKING-PARAMETERS -------------- ##
+LABELS:
+  Developer: gka
+  Description: 'BlueDoT Extraction'
+
+
+
+##------------ GENERATION-CONFIG-PARAMETERS ------------##
+TEMPERATURE: 0
+TOP_P: null 
+TOP_K: null 
+CANDIDATE_COUNT: 1
+MAX_OUTPUT_TOKENS: null
+PRESENCE_PENALTY: null 
+FREQUENCY_PENALTY: null 
+THINKING_BUDGET: -1  
+SEED: 69 
